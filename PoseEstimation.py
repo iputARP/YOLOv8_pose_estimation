@@ -5,7 +5,7 @@ from ultralytics import YOLO
 model = YOLO("yolov8n-pose.pt")
 
 # 本体のウェブカメラからキャプチャする設定の場合
-# video_path = 0  # 本体に付属のカメラを指定
+video_path = 0  # 本体に付属のカメラを指定
 capture = cv2.VideoCapture(video_path)
 # 一人だけの動画の場合
 # capture = cv2.VideoCapture("001.mp4")
